@@ -1,4 +1,3 @@
 {
-    "routes": [{ "src": "/(.*)", "dest": "/WEBSENSE/index.html" }]
-  }
-  
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+}
