@@ -1,0 +1,147 @@
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #f9fbfd;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  .contact-info {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    color: #4b4b9f;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info li i {
+    color: #4b4b9f;
+    margin-right: 0.5rem;
+  }
+  
+  .contact-form {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h3 {
+    font-size: 1.5rem;
+    color: #4b4b9f;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 0.8rem;
+    background-color: #6a5acd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button i {
+    margin-left: 0.5rem;
+  }
+  
+  .contact-form button:hover {
+    background-color: #8a2be2;
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeInContact {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contact-container {
+    animation: fadeInContact 1s ease-in-out both;
+  }
+  .book-call {
+    text-align: center;
+    margin-top: 20px; /* Adds spacing between the form and the button */
+  }
+  
+  .book-call h3 {
+    color: #444B54; /* Graphite Gray */
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .book-call-button {
+    display: inline-block;
+    background-color: #8a2be2; /* Bright blue */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-call-button:hover {
+    background-color: #2081C3; /* Darker blue on hover */
+  }
+  
+  

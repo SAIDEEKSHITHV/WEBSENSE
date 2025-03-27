@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Websense</h1>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero" class="hero">
+    <h2>Welcome to Websense</h2>
+    <p>Your digital presence starts here.</p>
+</section>
+
+<section id="about" class="about">
+    <div class="column">
+        <h3>About Us</h3>
+        <p>We are a web development agency focused on delivering high-quality websites that enhance your brand visibility.</p>
+    </div>
+    <div class="column image-placeholder"></div>
+</section>
+
+<section id="services" class="services">
+    <h3>Our Services</h3>
+    <div class="service-column">
+        <div class="service-box">Service 1</div>
+        <div class="service-box">Service 2</div>
+        <div class="service-box">Service 3</div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <h3>Our Work</h3>
+    <div class="portfolio-grid">
+        <div class="portfolio-item image-placeholder"></div>
+        <div class="portfolio-item image-placeholder"></div>
+        <div class="portfolio-item image-placeholder"></div>
+        <div class="portfolio-item image-placeholder"></div>
+        <div class="portfolio-item image-placeholder"></div>
+        <div class="portfolio-item image-placeholder"></div>
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+    <h3>What Our Clients Say</h3>
+    <div class="testimonial-box">"Amazing service!" - Client A</div>
+    <div class="testimonial-box">"Transformed our online presence!" - Client B</div>
+</section>
+
+<section id="contact" class="contact">
+    <h3>Contact Us</h3>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Websense. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

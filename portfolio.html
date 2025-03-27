@@ -1,0 +1,125 @@
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="style.css">
+
+
+<nav class="navbar">
+  <div class="logo">WEBSENSE</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://cal.com/sai-deekshith-zeizkv/project-scope-call" target="_main" class="book-call-button">Book a 15 min Call</a></li>  
+  </ul>
+</nav>
+
+<section id="portfolio" class="portfolio-section">
+  <h2>Our Portfolio</h2>
+  <p>Explore our latest projects showcasing beautiful landing pages and web experiences.</p>
+  <div class="portfolio-cards">
+    <!-- Portfolio Item 1 -->
+    <div class="portfolio-card">
+      <img src="fitness.jpeg" alt="Fitness Landing Page">
+      <div class="portfolio-content">
+        <h3>Fitness Landing Page</h3>
+        <p>A dynamic and engaging landing page for a premium fitness coaching program.</p>
+        <div class="tags">
+          <span>Landing Page</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="#" class="view-project">View Project &rarr;</a>
+      </div>
+    </div>
+    <!-- Portfolio Item 2 -->
+    <div class="portfolio-card">
+      <img src="ecommerce.avif" alt="E-commerce Landing Page">
+      <div class="portfolio-content">
+        <h3>E-commerce Landing Page</h3>
+        <p>A modern landing page for an online store with high-converting features.</p>
+        <div class="tags">
+          <span>Landing Page</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="#" class="view-project">View Project &rarr;</a>
+      </div>
+    </div>
+    <!-- Portfolio Item 3 -->
+    <div class="portfolio-card">
+      <img src="restaurant.jpeg" alt="Restaurant Landing Page">
+      <div class="portfolio-content">
+        <h3>Restaurant Landing Page</h3>
+        <p>Appetizing landing page for a fine dining restaurant with online reservations.</p>
+        <div class="tags">
+          <span>Landing Page</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="#" class="view-project">View Project &rarr;</a>
+      </div>
+    </div>
+    <!-- Portfolio Item 4 -->
+    <div class="portfolio-card">
+      <img src="creativeagency.jpeg" alt="Creative Agency Portfolio">
+      <div class="portfolio-content">
+        <h3>Creative Agency Portfolio</h3>
+        <p>Stunning portfolio website showcasing creative work and services.</p>
+        <div class="tags">
+          <span>Portfolio</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="#" class="view-project">View Project &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Include Footer -->
+<div id="footer-placeholder"></div>
+
+<script>
+  // Load footer.html into placeholder
+  fetch('footer.html')
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+<div class="chatbot">
+  <div class="chatbot-icon" id="chatbot-icon">
+    🤖
+  </div>
+  <div class="chatbox" id="chatbox">
+    <div class="chatbox-header">
+      <h4>Ask WebSense!</h4>
+      <span id="close-chatbox">✖</span>
+    </div>
+    <div class="chatbox-body" id="chatbox-body">
+      <p><strong>FAQs</strong></p>
+      <div class="chat-question" onclick="showAnswer(this)">What services do you offer?</div>
+      <div class="chat-answer">We offer web development, design, and graphic design services to help you grow your digital presence!</div>
+      <div class="chat-question" onclick="showAnswer(this)">How can I contact you?</div>
+      <div class="chat-answer">You can email us at justwebsense@gmail.com or use the contact form on our website.</div>
+      <div class="chat-question" onclick="showAnswer(this)">Can I see your portfolio?</div>
+      <div class="chat-answer">Sure! Visit the portfolio section to explore our previous projects.</div>
+      <div class="chat-question" onclick="showAnswer(this)">What are your pricing plans?</div>
+      <div class="chat-answer">Our pricing depends on the project scope. Contact us for a free consultation and quote!</div>
+      <div class="chat-question" onclick="showAnswer(this)">Why should I choose your services?</div>
+      <div class="chat-answer"> Our team is dedicated to delivering quality, meeting deadlines, and ensuring customer satisfaction.</div>
+      <div class="chat-question" onclick="showAnswer(this)">Where are you located?</div>
+      <div class="chat-answer">We are based in Bangalore, but we work with clients worldwide!</div>
+    </div>
+  </div>
+</div>
+
+<script src="chatbot.js"></script>

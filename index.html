@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSense - Powering Your Digital Presence</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+ <!-- Modern Loading Screen -->
+<div id="loading-screen">
+  <div class="loading-container">
+    <div class="loading-circle"></div>
+    <div class="loading-circle"></div>
+    <div class="loading-circle"></div>
+  </div>
+  <h3>Preparing Your Experience...</h3>
+</div>
+
+
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">&lt;/&gt; WEBSENSE</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://cal.com/sai-deekshith-zeizkv/project-scope-call" target="_main" class="book-call-button">Book a 15 min Call</a></li>  
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Powering Your Digital Presence</h1>
+      <p>We create stunning websites and digital experiences that help businesses thrive in the modern world.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn primary">Get Started</a>
+        <a href="portfolio.html" class="btn secondary">View Our Work</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <p>We offer comprehensive web solutions to help your business succeed in the digital world.</p>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-cogs"></i> <!-- Use FontAwesome icon for services -->
+        </div>
+        <h3>Landing Pages</h3>
+        <p>High-converting landing pages that capture leads and drive business growth.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-code"></i> <!-- Use FontAwesome icon for services -->
+        </div>
+        <h3>Web Development</h3>
+        <p>Custom websites built with modern technologies and best practices for optimal performance.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-paint-brush"></i> <!-- Use FontAwesome icon for services -->
+        </div>
+        <h3>Web Design</h3>
+        <p>Beautiful, intuitive designs that provide exceptional user experiences.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-chart-line"></i> <!-- Use FontAwesome icon for services -->
+        </div>
+        <h3>Digital Marketing</h3>
+        <p>Strategic marketing solutions to grow your online presence and reach.</p>
+      </div>
+    </div>
+    <section class="choose-us">
+      <h2>Why Choose Us?</h2>
+      <p>Your path to digital success starts here.</p>
+      <div class="choose-cards">
+        <div class="choose-card">
+          <div class="icon"><i class="fas fa-bolt"></i></div>
+          <h3>Young & Dynamic Team</h3>
+          <p>Our team of young professionals brings fresh perspectives and boundless energy to every project.</p>
+        </div>
+        <div class="choose-card">
+          <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Student-Friendly Pricing</h3>
+          <p>We offer competitive rates and flexible packages perfect for students and startups.</p>
+        </div>
+        <div class="choose-card">
+          <div class="icon"><i class="fas fa-rocket"></i></div>
+          <h3>Fast-Paced Delivery</h3>
+          <p>We work at startup speed, delivering quick results without compromising quality.</p>
+        </div>
+        <div class="choose-card">
+          <div class="icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Innovation First</h3>
+          <p>We stay ahead of the latest web trends and technologies to ensure your digital presence is cutting-edge.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="work-numbers">
+      <h2>Our Work in Numbers</h2>
+      <p>Young team, impressive results. Every number represents a success story.</p>
+      <div class="numbers-cards">
+        <div class="numbers-card">
+          <div class="icon"><i class="fas fa-trophy"></i></div>
+          <h3>15+</h3>
+          <p>Projects Completed</p>
+          <small>Successful projects delivered</small>
+        </div>
+        <div class="numbers-card">
+          <div class="icon"><i class="fas fa-users"></i></div>
+          <h3>15+</h3>
+          <p>Happy Clients</p>
+          <small>Satisfied customers worldwide</small>
+        </div>
+        <div class="numbers-card">
+          <div class="icon"><i class="fas fa-rocket"></i></div>
+          <h3>10+</h3>
+          <p>Landing Pages</p>
+          <small>High-converting designs</small>
+        </div>
+        <div class="numbers-card">
+          <div class="icon"><i class="fas fa-star"></i></div>
+          <h3>11+</h3>
+          <p>5-Star Reviews</p>
+          <small>Average client rating</small>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Include Footer -->
+<div id="footer-placeholder"></div>
+
+<script>
+  // Load footer.html into placeholder
+  fetch('footer.html')
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+  </section>
+
+  <script>
+    window.addEventListener('load', function () {
+      const loadingScreen = document.getElementById('loading-screen');
+      // Hide the loading screen after the page has loaded
+      setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+      }, 1500); // Adjust delay for the fade-out
+    });
+  </script>
+
+<div class="chatbot">
+  <div class="chatbot-icon" id="chatbot-icon">
+    🤖
+  </div>
+  <div class="chatbox" id="chatbox">
+    <div class="chatbox-header">
+      <h4>Ask WebSense!</h4>
+      <span id="close-chatbox">✖</span>
+    </div>
+    <div class="chatbox-body" id="chatbox-body">
+      <p><strong>FAQs</strong></p>
+      <div class="chat-question" onclick="showAnswer(this)">What services do you offer?</div>
+      <div class="chat-answer">We offer web development, design, and graphic design services to help you grow your digital presence!</div>
+      <div class="chat-question" onclick="showAnswer(this)">How can I contact you?</div>
+      <div class="chat-answer">You can email us at justwebsense@gmail.com or use the contact form on our website.</div>
+      <div class="chat-question" onclick="showAnswer(this)">How can I have meeting?</div>
+      <div class="chat-answer">You can click Book a call option on our website and schedule meeting with us.</div>
+      <div class="chat-question" onclick="showAnswer(this)">Can I see your portfolio?</div>
+      <div class="chat-answer">Sure! Visit the portfolio section to explore our previous projects.</div>
+      <div class="chat-question" onclick="showAnswer(this)">What are your pricing plans?</div>
+      <div class="chat-answer">Our pricing depends on the project scope. Contact us for a free consultation and quote!</div>
+      <div class="chat-question" onclick="showAnswer(this)">Why should I choose your services?</div>
+      <div class="chat-answer"> Our team is dedicated to delivering quality, meeting deadlines, and ensuring customer satisfaction.</div>
+      <div class="chat-question" onclick="showAnswer(this)">Where are you located?</div>
+      <div class="chat-answer">We are based in Bangalore, but we work with clients worldwide!</div>
+    </div>
+  </div>
+</div>
+
+<script src="chatbot.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

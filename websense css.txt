@@ -1,0 +1,202 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: #2081C3; /* Dark Blue */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #63D2FF; /* Sky Blue */
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    background-color: #2081C3; /* Dark Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    padding: 80px 20px;
+    background-color: #F7F9F9; /* Light Gray */
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-placeholder {
+    background-color: #555; /* Placeholder color */
+    flex: 1;
+    height: 300px;
+}
+
+/* Services Section Styles */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #BED8D4; /* Light Teal */
+}
+
+.service-column {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-box {
+    background-color: #708090; /* Slate Gray */
+    width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F7F9F9; /* Light Gray */
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #555; /* Placeholder color */
+    height: 200px;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 40px 20px;
+    background-color: #BED8D4; /* Light Teal */
+    text-align: center;
+}
+
+.testimonial-box {
+    background-color: #708090; /* Slate Gray */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 40px 20px;
+    background-color: #F7F9F9; /* Light Gray */
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #708090; /* Slate Gray */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #63D2FF; /* Sky Blue */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2081C3; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .service-column {
+        flex-direction: column;
+    }
+
+    .service-box {
+        width: 80%; /* Full width for small screens */
+        margin: 10px auto;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller items for mobile */
+    }
+
+    .column {
+        padding: 10px; /* Reduced padding */
+    }
+}
